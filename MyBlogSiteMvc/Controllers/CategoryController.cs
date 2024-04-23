@@ -16,5 +16,10 @@ namespace MyBlogSiteMvc.Controllers
             var categoryValues = cm.GetAll();
             return View(categoryValues);
         }
+
+        public PartialViewResult BlogDetailsCategoryList()
+        {
+            return PartialView();
+        }
     }
 }
