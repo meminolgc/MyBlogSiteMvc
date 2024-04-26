@@ -1,17 +1,15 @@
-﻿<div class="site-footer">
+﻿@model IEnumerable<EntityLayer.Concrete.About>
+
+<div class="site-footer">
     <div class="container">
         <div class="row mb-5">
-            <div class="col-md-4">
-                <h3 class="footer-heading mb-4">Hakkımızda</h3>
-                <p>
-                    Merhaba! E.O Blog, yazılım dünyasının derinliklerinden, güncel gündem meselelerinden
-                    ve kişisel gelişim yolculuğundan ilham alan bir blog sayfası. Burada, teknolojiye dair en son gelişmeleri takip
-                    ederken aynı zamanda kendimizi ve hayatımızı keşfediyoruz. Yazılımın kodlarını çözerken, dünyanın karmaşıklığını
-                    anlamaya çalışıyoruz. Gündemi yakından takip ederken, kendimizi ve toplumu daha iyi anlamaya çalışıyoruz. Ve bu
-                    yolculukta, sizinle birlikte olmaktan mutluluk duyuyoruz. E.O Blog ailesine katıldığınız için teşekkür ederiz.
-                    Beraber keşfetmeye hazır mısınız?
-                </p>
-            </div>
+            @foreach (var x in Model)
+            {
+                <div class="col-md-4">
+                    <h3 class="footer-heading mb-4">Hakkımızda</h3>
+                    <p>@x.AboutContent1</p>                   
+                </div>
+            }
             <div class="col-md-3 ml-auto">
                 <!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
                 <ul class="list-unstyled float-left mr-5">
