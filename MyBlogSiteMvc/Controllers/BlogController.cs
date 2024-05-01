@@ -21,7 +21,7 @@ namespace MyBlogSiteMvc.Controllers
 
         public PartialViewResult BlogList(int page = 1)
         {
-            var blogList = bm.GetAll().ToPagedList(page,6);
+            var blogList = bm.GetAll().ToPagedList(page, 6);
 
             return PartialView(blogList);
         }
@@ -29,7 +29,7 @@ namespace MyBlogSiteMvc.Controllers
         public PartialViewResult FeaturedPosts()
         {
             //1. Post
-            var postTitle1 = bm.GetAll().OrderByDescending(z=>z.BlogID).Where(x => x.CategoryID == 1).Select(y => y.BlogTitle).FirstOrDefault();
+            var postTitle1 = bm.GetAll().OrderByDescending(z => z.BlogID).Where(x => x.CategoryID == 1).Select(y => y.BlogTitle).FirstOrDefault();
             var postImage1 = bm.GetAll().OrderByDescending(z => z.BlogID).Where(x => x.CategoryID == 1).Select(y => y.BlogImage).FirstOrDefault();
             var blogDate1 = bm.GetAll().OrderByDescending(z => z.BlogID).Where(x => x.CategoryID == 1).Select(y => y.BlogDate).FirstOrDefault();
 
@@ -84,17 +84,20 @@ namespace MyBlogSiteMvc.Controllers
 
         public ActionResult BlogDetails()
         {
+
             return View();
         }
 
-        public PartialViewResult BlogCover()
+        public PartialViewResult BlogCover(int id)
         {
-            return PartialView();
+            var blogDetailsList = bm.GetBlogByID(id);
+            return PartialView(blogDetailsList);
         }
 
-        public PartialViewResult BlogReadAll()
+        public PartialViewResult BlogReadAll(int id)
         {
-            return PartialView();
+            var blogDetailsList = bm.GetBlogByID(id);
+            return PartialView(blogDetailsList);
         }
 
         public ActionResult BlogByCategory()

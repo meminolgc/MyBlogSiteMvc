@@ -8,7 +8,6 @@
 
 <section class="site-section py-lg">
     <div class="container">
-
         <div class="row blog-entries element-animate">
             <div class="col-md-12 col-lg-8 main-content">
 
@@ -17,6 +16,7 @@
                 @Html.Action("CommentList", "Comment")
             </div>
             <div class="col-md-12 col-lg-4 sidebar">
+
                 @Html.Action("AuthorAbout", "Author")
 
                 @Html.Action("AuthorPopularPost", "Author")
@@ -26,8 +26,9 @@
         </div>
     </div>
 </section>
-@Html.Action("OtherFeaturedPosts", "Blog")
+@*@Html.Action("OtherFeaturedPosts", "Blog")*@
 
-@Html.Action("MailSubscribe", "Blog")
+
+@Html.Action("AddMail", "MailSubscribe")
 
 @Html.Action("Footer", "About")
