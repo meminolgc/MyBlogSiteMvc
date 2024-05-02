@@ -20,8 +20,8 @@ namespace MyBlogSiteMvc.Controllers
         public PartialViewResult AuthorPopularPost(int id)
         {
             var blogAuthorId = bm.GetAll().Where(x => x.BlogID == id).Select(y => y.AuthorID).FirstOrDefault();
-            ViewBag.blogAuthorId = blogAuthorId;
-            return PartialView();
+            var authorBlogs = bm.GetBlogByAuthor(blogAuthorId);
+            return PartialView(authorBlogs);
         }
     }
 }
