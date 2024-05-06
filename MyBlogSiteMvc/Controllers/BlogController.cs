@@ -100,9 +100,14 @@ namespace MyBlogSiteMvc.Controllers
             return PartialView(blogDetailsList);
         }
 
-        public ActionResult BlogByCategory()
+        public ActionResult BlogByCategory(int id)
         {
-            return View();
+            var BlogListByCategory = bm.GetBlogByCategory(id);
+            var categoryName = bm.GetBlogByCategory(id).Select(y => y.Category.CategoryName).FirstOrDefault();
+            ViewBag.categoryName = categoryName;
+            var categoryDesc = bm.GetBlogByCategory(id).Select(y => y.Category.CategoryDescription).FirstOrDefault();
+            ViewBag.categoryDesc = categoryDesc;
+            return View(BlogListByCategory);
         }
     }
 }

@@ -10,9 +10,11 @@ namespace MyBlogSiteMvc.Controllers
     public class AboutController : Controller
     {
         AboutManager abm = new AboutManager();
+
         public ActionResult Index()
         {
-            return View();
+            var aboutcontent = abm.GetAll();
+            return View(aboutcontent);
         }
 
         public PartialViewResult Footer()

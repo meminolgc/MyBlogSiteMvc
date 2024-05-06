@@ -26,5 +26,10 @@ namespace BusinessLayer.Concrete
         {
             return repoBlog.List(x => x.AuthorID == id);
         }
+
+        public List<Blog> GetBlogByCategory(int id)
+        {
+            return repoBlog.List(x => x.CategoryID == id);
+        }
     }
 }
