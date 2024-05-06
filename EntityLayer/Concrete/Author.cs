@@ -15,10 +15,10 @@ namespace EntityLayer.Concrete
         [StringLength(50)]
         public string AuthorName { get; set; }
 
-        [StringLength(100)]
+        [StringLength(300)]
         public string AuthorImage { get; set; }
 
-        [StringLength(250)]
+        [StringLength(350)]
         public string AuthorAbout { get; set; }
 
         public ICollection<Blog> Blogs { get; set; }

@@ -25,7 +25,9 @@ namespace MyBlogSiteMvc.Controllers
 
         public PartialViewResult MeetTheTeam()
         {
-            return PartialView();
+            AuthorManager autman = new AuthorManager();
+            var authorList = autman.GetAll();
+            return PartialView(authorList);
         }
     }
 }

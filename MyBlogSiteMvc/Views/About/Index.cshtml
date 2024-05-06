@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('/miniblog/images/img_4.jpg');">
+<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url(https://enwpgo.wordpress.com/wp-content/uploads/2022/10/aboutus-aboutme.jpg);">
     <div class="container">
         <div class="row same-height justify-content-center">
             <div class="col-md-12 col-lg-10">
@@ -23,7 +23,7 @@
             @foreach (var item in Model)
             {
                 <div class="col-md-6 order-md-2">
-                    <img src="/miniblog/images/img_1.jpg" alt="Image" class="img-fluid">
+                    <img src="@item.AboutImage1" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-md-5 mr-auto order-md-1">
                     <h2>Biz Kimiz</h2>
@@ -39,40 +39,40 @@
                 </div>
             }
         </div>
+    </div>
+</div>
+
+@Html.Action("MeetTheTeam", "About")
+
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6">
+                    <img src="@item.AboutImage2" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-5 ml-auto">
+                    <h2>Ekibimiz</h2>
+                    <p class="mb-4">@item.AboutContent2</p>
+                    <ul class="ul-check list-unstyled success">
+                        <li>Teknoloji</li>
+                        <li>Sağlık ve İyi Hissetme</li>
+                        <li>Seyahat ve Keşif</li>
+                        <li>Yazılım</li>
+                        <li>Kültür ve Sanat</li>
+                        <li>Yemek ve Mutfak</li>
+                        <li>Moda ve Stil</li>
+                        <li>Finans ve İş Dünyası</li>
+                    </ul>
+                </div>
+            }
         </div>
     </div>
+</div>
 
-    @Html.Action("MeetTheTeam", "About")
+@*@Html.Action("MailSubscribe", "Blog")*@
 
-    <div class="site-section bg-light">
-        <div class="container">
-            <div class="row">
-                @foreach (var item in Model)
-                {
-                    <div class="col-md-6">
-                        <img src="@item.AboutImage2" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="col-md-5 ml-auto">
-                        <h2>Ekibimiz</h2>
-                        <p class="mb-4">@item.AboutContent2</p>
-                        <ul class="ul-check list-unstyled success">
-                            <li>Teknoloji</li>
-                            <li>Sağlık ve İyi Hissetme</li>
-                            <li>Seyahat ve Keşif</li>
-                            <li>Yazılım</li>
-                            <li>Kültür ve Sanat</li>
-                            <li>Yemek ve Mutfak</li>
-                            <li>Moda ve Stil</li>
-                            <li>Finans ve İş Dünyası</li>
-                        </ul>
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
+@Html.Action("AddMail", "MailSubscribe")
 
-    @*@Html.Action("MailSubscribe", "Blog")*@
-
-    @Html.Action("AddMail", "MailSubscribe")
-
-    @Html.Action("Footer", "About")
+@Html.Action("Footer", "About")
