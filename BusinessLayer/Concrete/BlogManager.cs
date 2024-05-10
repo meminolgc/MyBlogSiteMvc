@@ -57,6 +57,10 @@ namespace BusinessLayer.Concrete
             Blog blog = repoBlog.Find(x => x.BlogID == p.BlogID);
             blog.BlogTitle = p.BlogTitle;
             blog.BlogContent = p.BlogContent;
+            blog.BlogDate = p.BlogDate;
+            blog.BlogImage = p.BlogImage;
+            blog.CategoryID = p.CategoryID;
+            blog.AuthorID = p.AuthorID;
             return repoBlog.Update(blog);
         }
     }

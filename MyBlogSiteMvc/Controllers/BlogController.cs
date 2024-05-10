@@ -131,11 +131,11 @@ namespace MyBlogSiteMvc.Controllers
             ViewBag.values = values;
 
             List<SelectListItem> values2 = (from x in c.Authors.ToList()
-                                           select new SelectListItem
-                                           {
-                                               Text = x.AuthorName,
-                                               Value = x.AuthorID.ToString()
-                                           }).ToList();
+                                            select new SelectListItem
+                                            {
+                                                Text = x.AuthorName,
+                                                Value = x.AuthorID.ToString()
+                                            }).ToList();
             ViewBag.values2 = values2;
             return View();
         }
@@ -153,6 +153,7 @@ namespace MyBlogSiteMvc.Controllers
             return RedirectToAction("AdminBlogList");
         }
 
+        [HttpGet]
         public ActionResult UpdateBlog(int id)
         {
             Context c = new Context();
@@ -176,10 +177,18 @@ namespace MyBlogSiteMvc.Controllers
             return View(blog);
         }
 
+        [HttpPost]
         public ActionResult UpdateBlog(Blog p)
         {
             bm.UpdateBlog(p);
             return RedirectToAction("AdminBlogList");
+        }
+
+        public ActionResult GetCommentByBlog(int id)
+        {
+            CommentManager cm = new CommentManager();
+            var commentList = cm.CommentByBlog(id);
+            return View(commentList);
         }
     }
 }
