@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BusinessLayer.Concrete;
+using EntityLayer.Concrete;
 
 namespace MyBlogSiteMvc.Controllers
 {
@@ -28,6 +29,19 @@ namespace MyBlogSiteMvc.Controllers
             AuthorManager autman = new AuthorManager();
             var authorList = autman.GetAll();
             return PartialView(authorList);
+        }
+
+        public ActionResult UpdateAboutList()
+        {
+            var aboutList = abm.GetAll();
+            return View(aboutList);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateAbout(About p)
+        {
+            abm.UpdateAboutBM(p);
+            return RedirectToAction("UpdateAboutList");
         }
     }
 }

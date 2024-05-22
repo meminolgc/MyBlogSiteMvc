@@ -118,6 +118,12 @@ namespace MyBlogSiteMvc.Controllers
             return View(blogList);
         }
 
+        public ActionResult AdminBlogList2()
+        {
+            var blogList = bm.GetAll();
+            return View(blogList);
+        }
+
         [HttpGet]
         public ActionResult AddNewBlog()
         {
