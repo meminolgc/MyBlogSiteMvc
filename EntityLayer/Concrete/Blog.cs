@@ -22,6 +22,8 @@ namespace EntityLayer.Concrete
 
         public string BlogContent { get; set; }
 
+        public int BlogRating { get; set; }
+
         public int CategoryID { get; set; }
 
         public virtual Category Category { get; set; }
