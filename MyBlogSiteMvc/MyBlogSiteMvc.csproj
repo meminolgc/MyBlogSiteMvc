@@ -137,6 +137,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AuthorController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ChartController.cs" />
@@ -2051,6 +2053,29 @@
     <Content Include="miniblog\js\popper.min.js" />
     <Content Include="miniblog\js\slick.min.js" />
     <Content Include="miniblog\single.html" />
+    <Content Include="photoalbum\anasayfa1.png" />
+    <Content Include="photoalbum\anasayfa2.png" />
+    <Content Include="photoalbum\dash1.png" />
+    <Content Include="photoalbum\dash10.png" />
+    <Content Include="photoalbum\dash2.png" />
+    <Content Include="photoalbum\dash3.png" />
+    <Content Include="photoalbum\dash4.png" />
+    <Content Include="photoalbum\dash5.png" />
+    <Content Include="photoalbum\dash6.png" />
+    <Content Include="photoalbum\dash7.png" />
+    <Content Include="photoalbum\dash8.png" />
+    <Content Include="photoalbum\dash9.png" />
+    <Content Include="photoalbum\hakkımızda1.png" />
+    <Content Include="photoalbum\hakkımızda2.png" />
+    <Content Include="photoalbum\hakkımızda3.png" />
+    <Content Include="photoalbum\hakkımızda4.png" />
+    <Content Include="photoalbum\hakkımızda5.png" />
+    <Content Include="photoalbum\iletişim1.png" />
+    <Content Include="photoalbum\iletişim2.png" />
+    <Content Include="photoalbum\kategori1.png" />
+    <Content Include="photoalbum\kategori2.png" />
+    <Content Include="photoalbum\kategori3.png" />
+    <Content Include="photoalbum\kategori4.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="miniblog\.DS_Store" />
@@ -2477,9 +2502,13 @@
     <Content Include="Views\Chart\Chart1.cshtml" />
     <Content Include="Views\Chart\Chart2.cshtml" />
     <Content Include="Views\Chart\Chart3.cshtml" />
+    <Content Include="Views\Shared\_AuthorLayout.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Login\AuthorLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AuthorLogin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
