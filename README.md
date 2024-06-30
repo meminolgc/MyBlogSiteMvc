@@ -17,61 +17,63 @@
 <h2>Proje Görselleri</h2>
 
 <h3>Anasayfa</h3>
-<img src="/MyBlogSiteMvc/photoalbum/anasayfa1.png" alt="alt text" width="1000" height="500">
-</br>
-<img src="/MyBlogSiteMvc/photoalbum/anasayfa2.png" alt="alt text" width="1000" height="500">
+<div style="width: 600px; margin: 0 auto;">
+    <img src="/MyBlogSiteMvc/photoalbum/anasayfa1.png" alt="alt text" style="width: 100%; height: auto;">
+    </br>
+<img src="/MyBlogSiteMvc/photoalbum/anasayfa2.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <h3>Kategori Sayfaları</h3>
-<img src="/MyBlogSiteMvc/photoalbum/kategori1.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/kategori1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <p>Teknoloji kategorisine ait olan sayfa</p>
-<img src="/MyBlogSiteMvc/photoalbum/kategori2.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/kategori2.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <p>Yazılım kategorisine ait olan sayfa</p>
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/kategori3.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/kategori3.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <p>Seyahat kategorisine ait olan sayfa</p>
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/kategori4.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/kategori4.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <p>Film & Dizi kategorisine ait olan sayfa</p>
 </p>
-<img src="/MyBlogSiteMvc/photoalbum/hakkımızda1.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/hakkımızda1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/hakkımızda2.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/hakkımızda2.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/hakkımızda3.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/hakkımızda3.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/hakkımızda4.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/hakkımızda4.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/hakkımızda5.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/hakkımızda5.png" alt="alt text" style="width: 100%; height: auto;">
 <p>Footer alanı</p>
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/iletişim1.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/iletişim1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/iletişim2.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/iletişim2.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash1.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash2.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash2.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash3.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash3.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash5.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash5.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash6.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash6.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash7.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash7.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash8.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash8.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash9.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash9.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash10.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash10.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash11.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash11.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash12.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash12.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<img src="/MyBlogSiteMvc/photoalbum/dash13.png" alt="alt text" width="1000" height="500">
+<img src="/MyBlogSiteMvc/photoalbum/dash13.png" alt="alt text" style="width: 100%; height: auto;">
+</div>
