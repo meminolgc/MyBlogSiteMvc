@@ -2,9 +2,9 @@
 <p>Projenin kullanıcı bölümünde siteye giriş yapan kişi sitede yer alan bütün blogları görebilir, mevcut bloglara yorum yapabilir, bir yazara veya bir kategoriye ait blogları listeleyebilir.</p>
 <p>Projenin yazar bölümünde yazar yeni blog yazabilir, kendi yazdığı bloglarda düzenlemeler yapabilir, kendi bloglarına yapılan yorumları görebilir, diğer yazarlara veya admine mesaj gönderebilir.(NOT:Yazar modülü tamamlanmadığından dolayı projeye dahil değildir.)</p>
 <p>Projenin admin bölümünde kategori, blog, iletişim ve diğer bütün menülere yetki sağlandı. Admin tarafından yorumlar silinebilir.</p>
-<p>Proje, N Katmanlı mimari prensiplerinde (DataAccess, Entity, Business, Presentation) Solid mimarisinden uzaklaşmadan geliştirilmeye çalışıldı.</p>
+<p>Proje, N Katmanlı mimaride (DataAccess, Entity, Business, Presentation) SOLID prensiplerinden uzaklaşmadan geliştirilmeye çalışıldı.</p>
 <h2>NOT</h2>
-<p2>Proje tamamlanmadı.</p2>
+<p2>Projenin %60'ı tamamlanmış durumda.Görseller ekte mevcut.</p2>
 <h2>Teknik İçerikler</h2>
 <ul>
     <li>N Katmanlı Mimari</li>
@@ -12,10 +12,10 @@
       <li>Generic Repository</li>
        <li>Code First</li>
        <li>Entity Framework</li>
-       <li>Linq Sorguları</li>       
+       <li>Linq Sorguları</li>  
+       <li>HTML, CSS, Bootstrap, JavaScript</li>
 </ul>
 <h2>Proje Görselleri</h2>
-
 <h3>Anasayfa</h3>
 <div style="width: 600px; margin: 0 auto;">
     <img src="/MyBlogSiteMvc/photoalbum/anasayfa1.png" alt="alt text" style="width: 100%; height: auto;">
@@ -25,19 +25,16 @@
 <h3>Kategori Sayfaları</h3>
 <img src="/MyBlogSiteMvc/photoalbum/kategori1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<p>Teknoloji kategorisine ait olan sayfa</p>
+<h3>Teknoloji kategorisine ait olan sayfa</h3>
 <img src="/MyBlogSiteMvc/photoalbum/kategori2.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<p>Yazılım kategorisine ait olan sayfa</p>
-</br>
+<h3>Yazılım kategorisine ait olan sayfa</h3>
 <img src="/MyBlogSiteMvc/photoalbum/kategori3.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<p>Seyahat kategorisine ait olan sayfa</p>
-</br>
+<h3>Seyahat kategorisine ait olan sayfa</h3>
 <img src="/MyBlogSiteMvc/photoalbum/kategori4.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
-<p>Film & Dizi kategorisine ait olan sayfa</p>
-</p>
+<h3>Film & Dizi kategorisine ait olan sayfa</h3>
 <img src="/MyBlogSiteMvc/photoalbum/hakkımızda1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <img src="/MyBlogSiteMvc/photoalbum/hakkımızda2.png" alt="alt text" style="width: 100%; height: auto;">
@@ -47,8 +44,7 @@
 <img src="/MyBlogSiteMvc/photoalbum/hakkımızda4.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <img src="/MyBlogSiteMvc/photoalbum/hakkımızda5.png" alt="alt text" style="width: 100%; height: auto;">
-<p>Footer alanı</p>
-</br>
+<h3>Footer alanı</h3>
 <img src="/MyBlogSiteMvc/photoalbum/iletişim1.png" alt="alt text" style="width: 100%; height: auto;">
 </br>
 <img src="/MyBlogSiteMvc/photoalbum/iletişim2.png" alt="alt text" style="width: 100%; height: auto;">
